@@ -1,5 +1,8 @@
 # wechat-viral-topic · 公众号选题专家
 
+**skills.sh 页面**: https://skills.sh/zhaoxinghua09-cell/wechat-viral-topic ｜ `npx skills add zhaoxinghua09-cell/wechat-viral-topic`
+
+
 选题时把「真信号」与「标题党猜测」分开，并在动笔前先过合规红线。给出候选选题的证据强度分级，而不是热度数字。
 
 Separates a real signal from a clickbait guess when choosing topics, and applies compliance red lines before any draft is written.
