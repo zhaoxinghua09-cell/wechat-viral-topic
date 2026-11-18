@@ -1,0 +1,26 @@
+# wechat-viral-topic golden-set run log
+
+run_at_utc: 2026-11-18T16:43:40Z
+python: 3.13.18
+os: Windows 11
+command: python tests/run_golden.py
+
+exit_code: 0
+
+--- stdout ---
+W01-scan-figures           PASS
+W02-scan-dates             PASS
+W03-scan-topics            PASS
+W04-scan-conflict          PASS
+[W004] 无有效信号：既没有可证数字，也没有冲突句/痛点句/话题词，不适合做选题
+W05-scan-no-signal         PASS: 正确拒答为 W004
+W06-risk-medical           PASS
+W07-risk-absolute          PASS
+W08-risk-income            PASS
+W09-risk-unsourced         PASS
+W10-title-long-and-red     PASS
+W11-title-good             PASS
+--- 11/11 PASS
+
+--- stderr ---
+(empty)
