@@ -7,6 +7,9 @@
 复现：`python demo/run_demo.py`，见 `demo/SAMPLE-IO.md`。
 <!-- /LGD-DIFF -->
 
+
+**想知道自己的技能多少分？/ Get your own skill scored:** [一键提交评测 / submit for review](https://github.com/zhaoxinghua09-cell/lgd-skill-review/issues/new?template=review-request.yml) — 静态分析、不执行你的代码。
+
 **skills.sh 页面**: https://skills.sh/zhaoxinghua09-cell/wechat-viral-topic ｜ `npx skills add zhaoxinghua09-cell/wechat-viral-topic`
 
 
