@@ -149,8 +149,11 @@ def riskcheck(text):
     hits = []
     for name, level, pat in RISK_RULES:
         for m in pat.finditer(text):
-            ctx = text[max(0, m.start() - 12):m.end() + 12].replace("\n", " ")
-            hits.append({"rule": name, "level": level, "word": m.group(0), "context": ctx})
+            # context 必须是原文逐字片段，便于任何人回原文核对；换行保留为 ⏎ 标记不改字
+            ctx = text[max(0, m.start() - 12):m.end() + 12]
+            ctx_plain = ctx.replace("\n", " ")
+            hits.append({"rule": name, "level": level, "word": m.group(0),
+                         "context": ctx_plain, "quote": ctx})
     red = [h for h in hits if h["level"] == "RED"]
     yellow = [h for h in hits if h["level"] == "YELLOW"]
     return {"verdict": "BLOCK" if red else ("WARN" if yellow else "PASS"),
