@@ -16,6 +16,7 @@ python demo/run_demo.py
 ## 输入文件
 
 - `demo\RUN-LOG.txt`
+- `demo\SAMPLE-IO.md`
 - `demo\hot_topic_sample.md`
 - `demo\risky_draft.md`
 
@@ -52,4 +53,4 @@ python demo/run_demo.py
 
 - 输出中的日期、数字、人名均能在输入文件里逐字找到；找不到即为缺陷。
 - 输出结构应与 SKILL.md 声明的骨架一致。
-- 生成时间：2026-11-19T01:10:08
+- 生成时间：2026-11-19T01:24:35
