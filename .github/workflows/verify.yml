@@ -21,3 +21,9 @@ jobs:
         run: python tests/run_golden.py
       - name: Hits must be traceable
         run: python demo/prove_hits.py
+
+      - name: Self-audit with the LGD engine (static 96 + executed 100)
+        run: |
+          # lgd-engine-executed
+          git clone --depth 1 https://github.com/zhaoxinghua09-cell/lgd-skill-review.git "$RUNNER_TEMP/lgd-engine"
+          python "$RUNNER_TEMP/lgd-engine/scripts/review.py" . --json --run
