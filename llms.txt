@@ -1,34 +1,42 @@
-# wechat-viral-topic
+# wechat-viral-topic · 公众号选题专家
 
-> Turns a raw trend into a defensible topic card via verifiable signals, compliance red-line screening and headline grading.
+> Machine-readable index for AI agents: `AI-INDEX.json`. Human/agent guide: `SKILL.md`. Chinese first, English follows.
 
-## When to use
+## What this is (EN)
+Separates a real signal from a clickbait guess when choosing topics, and applies compliance red lines before any draft is written.
 
-- 这周公众号写什么好  →  scan 素材信号抽取
-- 这个素材能不能做成 10万+  →  scan + 选题卡
-- 帮我起 10 个标题  →  titlecheck 标题体检
-- 这篇有没有违规风险  →  riskcheck 红线判定
-- 这个医美选题能不能写  →  riskcheck（医疗声明 RED）
-- give me viral topic ideas and check compliance risk  →  same
+## 这是什么（中文）
+选题时把「真信号」与「标题党猜测」分开，并在动笔前先过合规红线。给出候选选题的证据强度分级，而不是热度数字。
 
-## When NOT to use
+## When to use it (EN)
+Use when picking a WeChat/公众号 topic, judging whether a hot item is worth writing, or checking a draft for compliance risk before publishing.
 
-- 代写整篇长文
-- 刷量/诱导分享方案
-- 医疗诊断或疗效承诺
+## 什么时候用它（中文）
+为公众号选题、判断热点是否值得写、或发布前检查稿件合规风险时使用。
 
-## Entrypoints
+## Entrypoints / 入口命令
+```bash
+python tools/topicguard.py score --file candidates.md --out ./out --json
+python tools/topicguard.py redline --file draft.md --json
+python tests/run_golden.py
+```
 
-- cli: `python tools/topicguard.py scan --file <material>`
-- verify: `python tools/topicguard.py riskcheck --file <draft>`
-- gate: `python tests/run_golden.py`
-- review: `python scripts/review.py <this_dir> --run`
+## Output (EN)
+Topic candidates graded by evidence strength (signal / weak signal / guess), plus a red-line list naming the exact sentence that trips each rule.
 
-## Ecosystem
+## 输出（中文）
+按证据强度分级的候选选题（真信号/弱信号/猜测），以及点名到具体句子的红线清单。
 
-- Author: 诺声(Logos)@SynomosAI (LGD / SynomosAI)
-- Theory anchor: 三律：有籍（可追溯）/ 有证（可核验）/ 有门禁（可拦截）
+## Proof you can re-run / 可复跑的证据
+- Golden set: 11 cases — `python tests/run_golden.py` prints a pass count and exits 0.
+- Differentiator: title overreach detection
+- Zero dependencies, offline, no credentials. Standard library only.
 
-- summarize-pro — 访谈/会议素材需要先压成要点再选题
-- debug-pro — 选题涉及技术故障需核实细节
-- lgd-skill-review — 要评测技能包并拿整改清单
+## Family / 同族技能（LGD Skills）
+- [summarize-pro](https://github.com/zhaoxinghua09-cell/summarize-pro) — 会议纪要专家
+- [debug-pro](https://github.com/zhaoxinghua09-cell/debug-pro) — 排障专家
+- [lgd-skill-review](https://github.com/zhaoxinghua09-cell/lgd-skill-review) — 技能审计官
+
+## Evaluation registry / 爆款清单
+Audited against six dimensions; passing packages are registered at https://github.com/zhaoxinghua09-cell/lgd-hit-list with score and receipt.
+经六维审计通过后登记于爆款清单 https://github.com/zhaoxinghua09-cell/lgd-hit-list，附分数与回执。

@@ -1,0 +1,42 @@
+{
+  "schema": "lgd.ai-index/1",
+  "name": "wechat-viral-topic",
+  "displayName_zh": "公众号选题专家",
+  "version": "2.1.4",
+  "license": "MIT",
+  "author": "诺声(Logos)@SynomosAI",
+  "homepage": "https://github.com/zhaoxinghua09-cell/wechat-viral-topic",
+  "registry": "https://github.com/zhaoxinghua09-cell/lgd-hit-list",
+  "family": [
+    "summarize-pro",
+    "debug-pro",
+    "lgd-skill-review"
+  ],
+  "language": [
+    "zh-CN",
+    "en"
+  ],
+  "purpose_en": "Separates a real signal from a clickbait guess when choosing topics, and applies compliance red lines before any draft is written.",
+  "purpose_zh": "选题时把「真信号」与「标题党猜测」分开，并在动笔前先过合规红线。给出候选选题的证据强度分级，而不是热度数字。",
+  "use_when_en": "Use when picking a WeChat/公众号 topic, judging whether a hot item is worth writing, or checking a draft for compliance risk before publishing.",
+  "use_when_zh": "为公众号选题、判断热点是否值得写、或发布前检查稿件合规风险时使用。",
+  "entrypoints": [
+    "python tools/topicguard.py score --file candidates.md --out ./out --json",
+    "python tools/topicguard.py redline --file draft.md --json",
+    "python tests/run_golden.py"
+  ],
+  "outputs_en": "Topic candidates graded by evidence strength (signal / weak signal / guess), plus a red-line list naming the exact sentence that trips each rule.",
+  "outputs_zh": "按证据强度分级的候选选题（真信号/弱信号/猜测），以及点名到具体句子的红线清单。",
+  "verification": {
+    "golden_set": "11 cases",
+    "rerun_command": "python tests/run_golden.py",
+    "exit_code_semantics": "0 when all cases pass",
+    "differentiator": "title overreach detection"
+  },
+  "constraints": {
+    "offline": true,
+    "stdio_only": true,
+    "network": false,
+    "credentials": false
+  }
+}
