@@ -1,5 +1,12 @@
 # wechat-viral-topic · 公众号选题专家
 
+<!-- LGD-DIFF -->
+**Compliance hits quote the source draft — every flagged phrase is auditable.**
+
+合规命中项一律摘回原文片段，可逐句核对；没有原文依据的风险点不报。
+复现：`python demo/run_demo.py`，见 `demo/SAMPLE-IO.md`。
+<!-- /LGD-DIFF -->
+
 **skills.sh 页面**: https://skills.sh/zhaoxinghua09-cell/wechat-viral-topic ｜ `npx skills add zhaoxinghua09-cell/wechat-viral-topic`
 
 
