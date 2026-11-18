@@ -1,5 +1,16 @@
 # wechat-viral-topic · 公众号选题专家
 
+<!-- LGD-ECOSYSTEM -->
+[![verifiability](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhaoxinghua09-cell%2Flgd-skill-review%2Fmain%2Fbench%2Fbadge.json)](https://zhaoxinghua09-cell.github.io/lgd-skill-review/benchmark.html)
+
+**同系列 / Ecosystem** — 本包属于同一套可验证技能，共用一把尺子：
+[`summarize-pro`](https://github.com/zhaoxinghua09-cell/summarize-pro) ｜ [`debug-pro`](https://github.com/zhaoxinghua09-cell/debug-pro) ｜ [`lgd-skill-review`](https://github.com/zhaoxinghua09-cell/lgd-skill-review)
+
+- 评分口径与公开基准：https://zhaoxinghua09-cell.github.io/lgd-skill-review/rubric.html ｜ 榜单：https://zhaoxinghua09-cell.github.io/lgd-skill-review/benchmark.html
+- 把自己的技能丢进来比，不用联系我们：[提交评测](https://github.com/zhaoxinghua09-cell/lgd-skill-review/issues/new?template=review-request.yml)
+- 机器入口：`https://zhaoxinghua09-cell.github.io/lgd-skill-review/llms.txt`（全量语料：`llms-full.txt`）
+<!-- /LGD-ECOSYSTEM -->
+
 <!-- LGD-DIFF -->
 **Compliance hits quote the source draft — every flagged phrase is auditable.**
 
