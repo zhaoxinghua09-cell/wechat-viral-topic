@@ -40,3 +40,17 @@ Topic candidates graded by evidence strength (signal / weak signal / guess), plu
 ## Evaluation registry / 爆款清单
 Audited against six dimensions; passing packages are registered at https://github.com/zhaoxinghua09-cell/lgd-hit-list with score and receipt.
 经六维审计通过后登记于爆款清单 https://github.com/zhaoxinghua09-cell/lgd-hit-list，附分数与回执。
+
+<!-- LGD-INTENTS -->
+
+## Ask it like this / 这样问它
+
+Each line is phrased the way a person or an agent would actually search it. Routing target in parentheses.
+每一行都按「人和 AI 会怎么搜」来写，括号里是它在包内对应的入口。
+
+- Pick a WeChat 公众号 topic and grade it by evidence strength / 为公众号选题并按证据强度分级  (`entrypoints[0]`)
+- Decide whether a hot item is worth writing about or is just clickbait / 判断一个热点值不值得写、还是标题党  (`entrypoints[0]`)
+- Check a draft against compliance red lines before publishing / 发布前检查稿件是否触碰合规红线  (`entrypoints[1]`)
+- Detect whether my title overclaims what the body supports / 检测标题是否超出正文能支撑的范围  (`verification.differentiator`)
+
+<!-- /LGD-INTENTS -->
