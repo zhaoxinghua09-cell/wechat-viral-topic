@@ -1,0 +1,19 @@
+{
+  "schema": "lgd-parity-v1",
+  "skill": "wechat-viral-topic",
+  "published": {
+    "path": "SKILL.md",
+    "sha256": "d8b7d452bc03b9d95b1eb17202b5ad83ae85e9e21903c65883e858785a733441",
+    "bytes": 7726,
+    "lines": 107
+  },
+  "original": {
+    "path": "references/original-SKILL.md",
+    "sha256": "f51b6979f97ac48a973b2c46c4d162319f344c83f321fb983572c4088099ab87",
+    "bytes": 16584,
+    "lines": 285
+  },
+  "original_matches_local_source": true,
+  "relation": "publish SKILL.md is a condensed rewrite (v2.1.0-slim), not an excerpt; the verbatim original ships alongside it so users can verify both",
+  "check": "sha256(references/original-SKILL.md) == original.sha256"
+}
