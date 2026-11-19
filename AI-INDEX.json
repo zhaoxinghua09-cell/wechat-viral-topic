@@ -1,5 +1,5 @@
 {
-  "schema": "lgd.ai-index/1",
+  "schema": "lgd.ai-index/2",
   "name": "wechat-viral-topic",
   "displayName_zh": "公众号选题专家",
   "version": "2.1.4",
@@ -38,5 +38,32 @@
     "stdio_only": true,
     "network": false,
     "credentials": false
-  }
+  },
+  "intents": [
+    {
+      "id": "topic-pick",
+      "ask_en": "Pick a WeChat 公众号 topic and grade it by evidence strength",
+      "ask_zh": "为公众号选题并按证据强度分级",
+      "routes_to": "entrypoints[0]"
+    },
+    {
+      "id": "hot-worth-writing",
+      "ask_en": "Decide whether a hot item is worth writing about or is just clickbait",
+      "ask_zh": "判断一个热点值不值得写、还是标题党",
+      "routes_to": "entrypoints[0]"
+    },
+    {
+      "id": "redline-check",
+      "ask_en": "Check a draft against compliance red lines before publishing",
+      "ask_zh": "发布前检查稿件是否触碰合规红线",
+      "routes_to": "entrypoints[1]"
+    },
+    {
+      "id": "title-overreach",
+      "ask_en": "Detect whether my title overclaims what the body supports",
+      "ask_zh": "检测标题是否超出正文能支撑的范围",
+      "routes_to": "verification.differentiator"
+    }
+  ],
+  "intents_note": "intents is a lookup surface, not a feature list: each ask is phrased the way a user or an agent would search it, and routes_to points at a real entrypoint in this package. 如果某条 ask 在本包做不到，那就是缺陷，应当删掉而不是留着。"
 }
