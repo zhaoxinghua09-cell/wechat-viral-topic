@@ -3,9 +3,9 @@
   "skill": "wechat-viral-topic",
   "published": {
     "path": "SKILL.md",
-    "sha256": "d8b7d452bc03b9d95b1eb17202b5ad83ae85e9e21903c65883e858785a733441",
-    "bytes": 7726,
-    "lines": 107
+    "sha256": "2c795067d939b33d3a8a7385ae46e55cffc06be3a86570130a0d4ec98333f830",
+    "bytes": 6832,
+    "lines": 106
   },
   "original": {
     "path": "references/original-SKILL.md",
