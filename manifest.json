@@ -6,7 +6,7 @@
   "description_en": "A topic-selection assistant that turns a raw trend into a defensible topic card via verifiable signals, compliance red-line screening and headline grading, with a zero-dependency toolchain (scan / riskcheck / titlecheck), an 11-case golden set and a block-and-no-false-positive demo.",
   "author": "诺声(Logos)@SynomosAI",
   "copyright": "赵兴华 / Steven Zhao·China",
-  "version": "2.0.0",
+  "version": "2.1.5",
   "license": "LicenseRef-AllRightsReserved",
   "license_scope": "Theory text all rights reserved; scripts under tools/, tests/, demo/ are MIT-licensed.",
   "category": "内容创作"
