@@ -1,5 +1,22 @@
 # wechat-viral-topic · 公众号选题专家
 
+[![skills.sh](https://skills.sh/b/zhaoxinghua09-cell/wechat-viral-topic)](https://skills.sh/zhaoxinghua09-cell/wechat-viral-topic) [![LobeHub](https://img.shields.io/badge/LobeHub-Skills%20Market-6f42c1)](https://lobehub.com/skills/zhaoxinghua09-cell-wechat-viral-topic)
+
+## Install
+
+```bash
+npx skills add zhaoxinghua09-cell/wechat-viral-topic
+```
+
+One command, no sign-in. Works with Claude Code, Codex, Cursor, Windsurf, Gemini CLI, VS Code, Zed and any agent that reads `SKILL.md`.
+
+**Use when**
+- you need topic ideas for a WeChat public account, short video or comic
+- you want a trend turned into a defensible topic card with real signals
+- you need a headline graded for length, formula and red-line risk
+- you must screen a draft for medical claims, absolute wording or income promises
+- you are planning a content calendar and need angles that survive compliance
+
 <!-- LGD-ECOSYSTEM -->
 [![verifiability](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhaoxinghua09-cell%2Flgd-skill-review%2Fmain%2Fbench%2Fbadge.json)](https://zhaoxinghua09-cell.github.io/lgd-skill-review/benchmark.html)
 
