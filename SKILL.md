@@ -4,7 +4,7 @@ displayName: wechat-viral-topic
 slug: wechat-viral-topic
 author: 诺声(Logos)@SynomosAI
 copyright: 赵兴华 / Steven Zhao·China
-version: 2.1.4
+version: 2.1.5
 license: LicenseRef-AllRightsReserved
 license_scope: 理论文本保留所有权利（见文末「License」）；tools/*.py、tests/*.py、demo/*.py 等脚本文件单独以 MIT 许可提供，便于他人复跑与审计
 allowed-tools: Read, Glob, Grep, Edit, Bash
