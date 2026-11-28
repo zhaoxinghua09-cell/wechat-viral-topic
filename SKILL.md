@@ -58,14 +58,13 @@ trigger_keywords:
 
 
 
-# wechat-viral-topic · 精简版（v2.2.0-slim）
+# wechat-viral-topic
 
+**Iron law:** every compliance hit carries a verbatim slice of the draft, and every figure is traceable; red lines are named, not softened.
 
+**Use when:** topic ideas, viral angle, headline grading, 10w+ planning, advertising-law screening, medical-claim screening, content calendar.
 
-原 284 行 / 18 个 H2 / 9 份 references → 本页 60 行 / 2 模块 / 1 份 `references/details.md`。
-
-依据 SkillsBench（arXiv 2602.12670）：聚焦型胜全面型。
-
+> Slim body by design. Reproduction proof: `python demo/prove_hits.py` (exit code 0 = pass). Full procedures live in `references/details.md`.
 
 
 ## 1 用法：只决定一件事——这条选题凭什么值得写
